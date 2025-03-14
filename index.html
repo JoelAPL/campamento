@@ -8,37 +8,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- Importando Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: 'Roboto', sans-serif;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .card {
-            border-radius: 12px;
-        }
-        .btn {
-            width: 100%;
-            margin-top: 10px;
-            border-radius: 8px;
-        }
-        .dashboard-header {
-            margin-bottom: 20px;
-        }
-        .dashboard-header h4 {
-            font-weight: 600;
-        }
-        .nav-buttons button {
-            margin: 5px;
-        }
-    </style>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Login -->
     <div class="container" id="login">
-        <h4 class="center-align">Inicio de Sesión</h4>
         <div class="row">
             <div class="col s12 m6 offset-m3">
                 <div class="card">
@@ -57,19 +32,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Dashboard -->
-    <div class="container" id="dashboard" style="display: none;">
-        <div class="dashboard-header center-align">
-            <h4>Panel de Gestión de Campamento</h4>
-        </div>
-        <div class="row nav-buttons center-align">
-            <button class="btn green" onclick="mostrarInscripciones()">Inscribir Persona</button>
-            <button class="btn blue" onclick="mostrarParticipantes()">Ver Participantes</button>
-            <button class="btn red" onclick="logout()">Cerrar Sesión</button>
-        </div>
-        <div id="contenido"></div>
     </div>
 
     <!-- Scripts -->

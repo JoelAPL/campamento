@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campamento - Panel de Gestión</title>
+    <!-- Importando Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Importando Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dashboard -->
+    <div class="container" id="dashboard">
+        <div class="dashboard-header center-align">
+            <h4>Panel de Gestión de Campamento</h4>
+        </div>
+        <div class="row nav-buttons">
+            <button class="btn green" onclick="inscribirPersona()">Inscribir Persona</button>
+            <button class="btn red" onclick="logout()">Cerrar Sesión</button>
+        </div>
+        <div class="table-container" id="contenido"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
